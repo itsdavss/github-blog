@@ -1,17 +1,18 @@
-import { ProfileContainer } from './styles'
+import { Info, Name, ProfileCard, ProfileContainer } from './styles'
+import Avatar from '../../assets/avatar.png'
 
 export function ProfileSection() {
   return (
     <ProfileContainer>
-      <div>
+      <ProfileCard>
         <div>
-          <img src="" alt="" />
+          <img src={Avatar} />
         </div>
-        <div>
-          <div>
+        <Info>
+          <Name>
             <h1>Cameron Williamson</h1>
             <a href="#">GITHUB</a>
-          </div>
+          </Name>
           <div>
             <p>
               Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
@@ -24,8 +25,8 @@ export function ProfileSection() {
             <span>Rocketseat</span>
             <span>32 seguidores</span>
           </div>
-        </div>
-      </div>
+        </Info>
+      </ProfileCard>
     </ProfileContainer>
   );
 }
