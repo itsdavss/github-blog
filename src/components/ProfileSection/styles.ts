@@ -11,6 +11,7 @@ export const ProfileContainer = styled.section`
 export const ProfileCard = styled.div`
   background-color: ${(props) => props.theme["base-profile"]};
   display: flex;
+  width: 80%;
   max-width: 900px;
   padding: 32px;
   gap: 32px;
@@ -24,6 +25,15 @@ export const ProfileCard = styled.div`
     border-radius: 8px;
     object-fit: cover;
     margin-left: 8px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    & >div:first-of-type {
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 
@@ -77,5 +87,10 @@ export const Links = styled.div`
     i {
       color:  ${(props) => props.theme["base-label"]};
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
