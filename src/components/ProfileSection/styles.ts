@@ -11,7 +11,7 @@ export const ProfileContainer = styled.section`
 export const ProfileCard = styled.div`
   background-color: ${(props) => props.theme["base-profile"]};
   display: flex;
-  max-width: 1100px;
+  max-width: 900px;
   padding: 32px;
   gap: 32px;
   border-radius: 10px;
@@ -30,7 +30,7 @@ export const ProfileCard = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 `;
 
 export const Name = styled.div`
@@ -46,9 +46,36 @@ export const Name = styled.div`
     color:  ${(props) => props.theme["blue"]};
     font-size: 0.75rem;
     border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     &:hover {
       border-color: ${(props) => props.theme["blue"]};
+    }
+  }
+`;
+
+export const Description = styled.div`
+  p {
+    color:  ${(props) => props.theme["base-text"]};
+  }
+`;
+
+export const Links = styled.div`
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  span {
+    color:  ${(props) => props.theme["base-subtitle"]}; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    i {
+      color:  ${(props) => props.theme["base-label"]};
     }
   }
 `;
