@@ -11,6 +11,7 @@ export const ProfileContainer = styled.section`
 export const ProfileCard = styled.div`
   background-color: ${(props) => props.theme["base-profile"]};
   display: flex;
+  justify-content: center;
   width: 80%;
   max-width: 900px;
   padding: 32px;
@@ -40,7 +41,8 @@ export const ProfileCard = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const Name = styled.div`
@@ -73,7 +75,7 @@ export const Description = styled.div`
 `;
 
 export const Links = styled.div`
-  margin-top: 24px;
+  margin: 12px 0;
   display: flex;
   align-items: center;
   gap: 24px;
