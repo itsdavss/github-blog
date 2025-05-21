@@ -53,3 +53,13 @@ export const Form = styled.form`
     }
   }
 `;
+
+export const Posts = styled.div `
+  min-height: 40vh;
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+`

@@ -43,6 +43,10 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 
 export const Name = styled.div`
@@ -94,5 +98,6 @@ export const Links = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
 `;

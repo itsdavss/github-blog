@@ -1,4 +1,5 @@
-import { Form, PostsContainer } from "./styles";
+import { PostCard } from "../PostCard";
+import { Form, Posts, PostsContainer } from "./styles";
 
 export function PostsSection() {
   return (
@@ -15,7 +16,12 @@ export function PostsSection() {
             aria-label="Buscar conteúdo"
           />
         </Form>
-        <div>Cards</div>
+        <Posts>
+          <PostCard/>
+          <PostCard/>
+          <PostCard/>
+          <PostCard/>
+        </Posts>
       </div>
     </PostsContainer>
   );
