@@ -35,7 +35,7 @@ export const CardTitle = styled.div`
   span {
     font-size: 0.875rem;
     color: ${(props) => props.theme["base-span"]};
-    width: 40%;
+    width: 20%;
     text-align: end;
   }
 `

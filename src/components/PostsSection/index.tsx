@@ -1,7 +1,29 @@
+import axios from "axios";
 import { PostCard } from "../PostCard";
 import { Form, Posts, PostsContainer } from "./styles";
+import { useEffect, useState } from "react";
+
+interface postsData {
+  body: string;
+  title: string
+}
 
 export function PostsSection() {
+  const [posts, setPosts] = useState<postsData[]>([]);
+
+  async function getPosts() {
+    const response = await axios.get(
+      `https://api.github.com/search/issues?q=repo:itsdavss/github-blog+type:issue`
+    );
+    console.log(response.data.items);
+
+    setPosts(response.data.items);
+  }
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
   return (
     <PostsContainer>
       <div>
@@ -17,10 +39,8 @@ export function PostsSection() {
           />
         </Form>
         <Posts>
-          <PostCard/>
-          <PostCard/>
-          <PostCard/>
-          <PostCard/>
+          {posts &&
+            posts.map((post, index) => <PostCard key={index} title={post.title} body={post.body} />)}
         </Posts>
       </div>
     </PostsContainer>
