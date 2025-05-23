@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 interface postsData {
   body: string;
   title: string;
+  updated_at: string;
 }
 
 export function PostsSection() {
@@ -57,7 +58,7 @@ export function PostsSection() {
         <Posts>
           {posts &&
             posts.map((post, index) => (
-              <PostCard key={index} title={post.title} body={post.body} />
+              <PostCard key={index} title={post.title} body={post.body} updatedAt={post.updated_at} />
             ))}
         </Posts>
       </div>
