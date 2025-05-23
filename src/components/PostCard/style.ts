@@ -30,6 +30,7 @@ export const CardTitle = styled.div`
   h3 {
     color: ${(props) => props.theme["base-title"]};
     font-size: 1.25rem;
+    max-width: 80%;
   }
 
   span {
