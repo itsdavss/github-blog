@@ -26,6 +26,7 @@ export const CardTitle = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 
   h3 {
     color: ${(props) => props.theme["base-title"]};
