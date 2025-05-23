@@ -47,6 +47,7 @@ export const Form = styled.form`
     border: 1px solid ${(props) => props.theme["base-border"]};
     border-radius: 6px;
     padding-left: 16px;
+    color: ${(props) => props.theme["base-title"]};
 
     ::placeholder {
       color: ${(props) => props.theme["base-label"]};
