@@ -8,7 +8,7 @@ export const TextContainer = styled.section`
 export const TextSection = styled.div`
     margin: 0 auto;
     padding: 0 32px;
-    width: 45%;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 1000px;
     color: ${(props) => props.theme["base-text"]};
 `;
