@@ -17,7 +17,7 @@ This application simulates a blog that consumes data from the GitHub Users API, 
 The application also displays information from my GitHub profile, such as profile picture, name, bio, follower count, and other data provided by the API.
 
 During development, I practiced key concepts such as:
-- API consumption using Fetch and Axios
+- API consumption using Axios
 - Routing with React Router DOM
 - Handling forms
 - Component organization and React best practices
