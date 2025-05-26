@@ -9,6 +9,6 @@ export const TextSection = styled.div`
     margin: 0 auto;
     padding: 0 32px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     color: ${(props) => props.theme["base-text"]};
 `;
