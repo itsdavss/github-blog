@@ -1,6 +1,7 @@
 import { formatDistanceToNow } from "date-fns";
 import { CardText, CardTitle, StyledLink } from "./style";
 import { ptBR } from "date-fns/locale";
+import ReactMarkdown from "react-markdown";
 
 interface propsType {
   title: string;
@@ -13,13 +14,17 @@ export function PostCard({ title, body, updatedAt }: propsType) {
     <StyledLink to={"/"}>
       <CardTitle>
         <h3>{title}</h3>
-        <span>{formatDistanceToNow(updatedAt, {
-          addSuffix: true,
-          locale: ptBR,
-        })}</span>
+        <span>
+          {formatDistanceToNow(updatedAt, {
+            addSuffix: true,
+            locale: ptBR,
+          })}
+        </span>
       </CardTitle>
       <CardText>
-        <p>{body}</p>
+        <ReactMarkdown>
+          {body}
+        </ReactMarkdown>
       </CardText>
     </StyledLink>
   );

@@ -42,7 +42,6 @@ export const CardTitle = styled.div`
 `
 
 export const CardText = styled.div`
-  p {
     color: ${(props) => props.theme["base-text"]};
     line-height: 160%;
     display: -webkit-box;
@@ -50,7 +49,6 @@ export const CardText = styled.div`
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
 
   @media (max-width: 767px) {
     width: 100%;
