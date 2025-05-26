@@ -7,7 +7,7 @@ export const TextSection = styled.section`
   p {
     margin: 0 auto;
     padding: 0 32px;
-    width: 80%;
+    width: 45%;
     max-width: 1200px;
     color: ${(props) => props.theme["base-text"]};
   }
