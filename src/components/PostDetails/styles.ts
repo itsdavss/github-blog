@@ -19,7 +19,7 @@ export const PostDetailsCard = styled.div`
   gap: 32px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px #00000025;
-  margin: -68px 0 72px 0;
+  margin: -68px 0 30px 0;
 
   @media (max-width: 768px) {
     flex-direction: column;

@@ -1,9 +1,9 @@
 import { PostDetails } from "../PostDetails";
-// import ReactMarkdown from "react-markdown";
-import { TextSection } from "./styles";
+import { TextContainer, TextSection } from "./styles";
 import { useParams } from "react-router";
 import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
+import { MarkdownRenderer } from "../../utils/MarkdownRenderer";
 
 interface PostDataProps {
   body: string;
@@ -49,9 +49,11 @@ export function CompletePostSection() {
   return (
     <>
       <PostDetails data={postData} />
-      <TextSection>
-        {/* <ReactMarkdown>{postData.body}</ReactMarkdown> */}
-      </TextSection>
+      <TextContainer>
+        <TextSection>
+          <MarkdownRenderer content={postData.body} />
+        </TextSection>
+      </TextContainer>
     </>
   );
 }
