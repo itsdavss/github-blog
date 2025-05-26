@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+GitHub Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This was the practical challenge developed in Level 03 of Rocketseat's React course.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [Screenshots](#screenshots)
+- [How to Run the Project](#how-to-run-the-project)
+- [Developed with](#developed-with)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This application simulates a blog that consumes data from the GitHub Users API, GitHub Issues API, and GitHub Search API. The posts are based on the issues of a GitHub repository, allowing users to view a list with the title, summary, and date. By clicking on a post, users are redirected to a detailed page where the content is rendered in Markdown.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The application also displays information from my GitHub profile, such as profile picture, name, bio, follower count, and other data provided by the API.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+During development, I practiced key concepts such as:
+- API consumption using Fetch and Axios
+- Routing with React Router DOM
+- Handling forms
+- Component organization and React best practices
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Screenshots
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+#### Desktop design
+
+![](screenshots/github-blog.gif)
+
+## How to Run the Project
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone "https://github.com/itsdavss/github-blog"
+
+2. Navigate to the project folder:
+   ```bash
+   cd github-blog
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Start the development server:
+   ```bash
+   npm run dev
+
+## Developed with
+
+- Typescript 
+- React
+- API
+- Styled Components
+- Axios
+- React Router DOM
+
+## Author
+
+- GitHub - [itsdavss](https://github.com/itsdavss)
+- My portfolio - [Davi Oliveira](https://itsdavss.github.io/portfolio-davi/)
