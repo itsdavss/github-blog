@@ -1,5 +1,11 @@
+import { HeaderSection } from "../../components/HeaderSection";
+import { PostDetails } from "../../components/PostDetails";
+
 export function Post() {
-  return(
-    <h1>Post</h1>
-  )
+  return (
+    <>
+      <HeaderSection />
+      <PostDetails />
+    </>
+  );
 }

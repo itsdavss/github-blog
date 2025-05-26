@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProfileContainer = styled.section`
+export const PostDetailsContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,9 +8,10 @@ export const ProfileContainer = styled.section`
   color:  ${(props) => props.theme["base-title"]};
 `;
 
-export const ProfileCard = styled.div`
+export const PostDetailsCard = styled.div`
   background-color: ${(props) => props.theme["base-profile"]};
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 80%;
   max-width: 900px;
@@ -20,36 +21,12 @@ export const ProfileCard = styled.div`
   box-shadow: 0px 4px 4px 0px #00000025;
   margin: -68px 0 72px 0;
 
-  div>img {
-    width: 148px;
-    height: 148px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-left: 8px;
-  }
-
   @media (max-width: 768px) {
     flex-direction: column;
-
-    & >div:first-of-type {
-      display: flex;
-      justify-content: center;
-    }
   }
 `;
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    gap: 15px;
-  }
-`;
-
-export const Name = styled.div`
+export const Links = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,20 +49,14 @@ export const Name = styled.div`
   }
 `;
 
-export const Description = styled.div`
-  p {
-    color:  ${(props) => props.theme["base-text"]};
-  }
-`;
-
-export const Links = styled.ul`
+export const Info = styled.ul`
   margin: 12px 0;
   display: flex;
   align-items: center;
   gap: 24px;
 
   li {
-    color:  ${(props) => props.theme["base-subtitle"]}; 
+      color:  ${(props) => props.theme["base-span"]};
     display: flex;
     align-items: center;
     gap: 8px;

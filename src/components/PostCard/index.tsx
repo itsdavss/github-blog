@@ -7,11 +7,12 @@ interface propsType {
   title: string;
   body: string;
   updatedAt: string;
+  number: number;
 }
 
-export function PostCard({ title, body, updatedAt }: propsType) {
+export function PostCard({ title, body, updatedAt, number }: propsType) {
   return (
-    <StyledLink to={"/"}>
+    <StyledLink to={`post/${number}`}>
       <CardTitle>
         <h3>{title}</h3>
         <span>

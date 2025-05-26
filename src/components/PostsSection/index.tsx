@@ -7,6 +7,7 @@ interface postsData {
   body: string;
   title: string;
   updated_at: string;
+  number: number;
 }
 
 export function PostsSection() {
@@ -58,7 +59,7 @@ export function PostsSection() {
         <Posts>
           {posts &&
             posts.map((post, index) => (
-              <PostCard key={index} title={post.title} body={post.body} updatedAt={post.updated_at} />
+              <PostCard key={index} title={post.title} body={post.body} updatedAt={post.updated_at} number={post.number} />
             ))}
         </Posts>
       </div>

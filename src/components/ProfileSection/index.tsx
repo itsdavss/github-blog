@@ -76,16 +76,16 @@ export function ProfileSection() {
                 <p>{userData.bio}</p>
               </Description>
               <Links>
-                <span>
+                <li>
                   <i className="fa-brands fa-github" /> {userData.login}
-                </span>
-                <span>
+                </li>
+                <li>
                   <i className="fa-solid fa-building" /> {userData.company}
-                </span>
-                <span>
+                </li>
+                <li>
                   <i className="fa-solid fa-user-group" /> {userData.followers}{" "}
                   seguidores
-                </span>
+                </li>
               </Links>
             </Info>
           </>
