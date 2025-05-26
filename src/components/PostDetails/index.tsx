@@ -6,7 +6,7 @@ export function PostDetails() {
     <PostDetailsContainer>
       <PostDetailsCard>
         <Links>
-          <Link to={"/"}>VOLTAR</Link>
+          <Link to={"/"}><i className="fa-solid fa-chevron-left"></i>VOLTAR</Link>
           <Link to={"/"}>
             VER NO GITHUB
             <i className="fa-solid fa-arrow-up-right-from-square"></i>
@@ -19,10 +19,10 @@ export function PostDetails() {
               <i className="fa-brands fa-github" /> cameronwll
             </li>
             <li>
-              <i className="fa-solid fa-calendar"></i> Há 1 dia
+              <i className="fa-solid fa-calendar-day"></i> Há 1 dia
             </li>
             <li>
-              <i className="fa-solid fa-comment-dots"></i> 5 comentários
+              <i className="fa-solid fa-comment"></i> 5 comentários
             </li>
           </Info>
         </div>
